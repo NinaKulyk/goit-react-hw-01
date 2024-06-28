@@ -1,0 +1,26 @@
+.table {
+  width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.tableHead {
+  background-color: #4d4d4d;
+  color: white;
+  th {
+    border: 1px solid black;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.tableBody tr:nth-child(even) {
+  background-color: #cccccc;
+}
+
+.tableItem td {
+  border: 1px solid black;
+  padding: 12px;
+  text-align: center;
+}
