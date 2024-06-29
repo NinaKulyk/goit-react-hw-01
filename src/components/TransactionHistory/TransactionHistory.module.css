@@ -2,6 +2,7 @@
   width: 600px;
   margin: 0 auto;
   border-collapse: collapse;
+  flex: 1;
 }
 
 .tableHead {
@@ -9,18 +10,24 @@
   color: white;
   th {
     border: 1px solid black;
-    padding: 12px;
+    padding: 12px 0;
     font-size: 16px;
     font-weight: bold;
   }
 }
 
-.tableBody tr:nth-child(even) {
+.tableItem:nth-child(even) {
   background-color: #cccccc;
 }
 
-.tableItem td {
+td {
   border: 1px solid black;
-  padding: 12px;
+  padding: 12px 0;
   text-align: center;
+  width: calc(100% / 3);
+}
+
+td:first-child {
+  text-align: left;
+  padding-left: 11%;
 }
